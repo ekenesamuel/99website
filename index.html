@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>99designs</title>
+    <style>
+      body {
+        overflow: auto;
+        width: 100vw;
+      }
+      .body {
+        display: flex;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 30px;
+        font-weight: bolder;
+        font-family: Arial;
+        margin: 0px;
+        padding-left: 15px;
+        cursor: pointer;
+      }
+      .header2 {
+        padding-left: 15px;
+        margin: 0px;
+        cursor: pointer;
+      }
+      .middle {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        width: 0;
+        position: relative;
+        margin-left: 55px;
+        max-width: 800;
+        margin-right: 30px;
+        top: 5px;
+        font-family: Arial;
+        font-weight: bold;
+      }
+      .t1,
+      .t2,
+      .t3,
+      .t4,
+      .t5,
+      .contact {
+        cursor: pointer;
+        margin-right: 30px;
+      }
+      .clicks {
+        display: flex;
+      }
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 45px;
+        padding-left: 15px;
+        cursor: pointer;
+      }
+      .void {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        width: 0;
+        position: relative;
+        margin-left: 55px;
+        max-width: 500px;
+        margin-right: 30px;
+        top: 5px;
+        font-family: Arial;
+        font-weight: bold;
+      }
+      .right {
+        padding-top: 2px;
+        margin-right: 30px;
+        margin-top: 15px;
+        height: 35px;
+        width: 365px;
+        padding-left: 10px;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 5px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0.05);
+      }
+      .right::placeholder {
+        font-family: Arial;
+        font-size: 16px;
+      }
+      .about {
+        display: flex;
+      }
+      .topic {
+        display: flex;
+        font-size: 75px;
+        padding-left: 50px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        margin-top: 100px;
+      }
+      .line {
+        padding-left: 50px;
+        margin: 0px;
+        font-size: 40px;
+
+        font-family: Arial;
+      }
+      .summary {
+        padding-left: 65px;
+        margin-top: 50px;
+        width: 440px;
+      }
+      .author {
+        padding-left: 490px;
+        padding-top: 5px;
+      }
+      .button2 {
+        background-color: black;
+        color: white;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 50px;
+        font-size: 20px;
+        margin-top: 35px;
+        margin-left: 450px;
+      }
+      .sub-heading {
+        font-size: 25px;
+        font-family: Arial;
+        margin-left: 300px;
+        padding-top: 15px;
+        margin-bottom: 5px;
+      }
+      .search2 {
+        padding-top: 2px;
+        margin-left: 400px;
+        margin-top: 15px;
+        height: 35px;
+        width: 365px;
+        padding-left: 10px;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 5px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0.05);
+      }
+      .search2::placeholder {
+        font-family: Arial;
+        font-size: 16px;
+      }
+      .click2 {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        /* background-color: aquamarine; */
+        width: 90vw;
+        padding: 50px 0 50px 50px;
+      }
+      .a1 {
+        text-align: center;
+        font-size: 15px;
+        padding: 15px;
+        cursor: pointer;
+        box-shadow: 2px 3px 5px rgba(163, 163, 163, 0.527);
+        border-radius: 50px;
+        background-color: white;
+        border: 0px solid white;
+        width: 30%;
+        margin-bottom: 10px;
+        margin-left: 3%;
+      }
+      .hard {
+        background-color: burlywood;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 10px;
+        color: rgba(72, 64, 64, 0.644);
+        background: #ececec;
+        background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+
+        font-family: Mr Dafoe, sans-serif;
+        font-size: 30px;
+        text-align: center;
+        text-shadow: 0 -3px 0 #333, 0 6px 8px rgba(0, 0, 0, 0.4),
+          0 9px 10px rgba(0, 0, 0, 0.15), 0 30px 10px rgba(0, 0, 0, 0.18),
+          0 15px 10px rgba(0, 0, 0, 0.21);
+        font-size: 30px;
+        padding: 15px;
+        cursor: pointer;
+        margin-left: 210px;
+        width: 60%;
+      }
+      .pt1 {
+      }
+
+      .pt2 {
+        font-family: Arial;
+        font-weight: bolder;
+      }
+      .pt3 {
+      }
+      .v-hard {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: 30px;
+        position: relative;
+        background-position: center 50%;
+        background-color: blue;
+        background-image: url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        color: #ffffff;
+
+        font-size: 30px;
+        font-family: "Bungee", cursive;
+        animation: filling 3s ease forwards;
+      }
+      .a2 {
+        text-align: center;
+        font-size: 15px;
+        padding: 15px;
+        cursor: pointer;
+        box-shadow: 2px 3px 5px rgba(163, 163, 163, 0.527);
+        border-radius: 50px;
+        background-color: white;
+        border: 0px solid white;
+        width: 30%;
+        margin-bottom: 10px;
+        margin-left: 3%;
+      }
+      .click3 {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        /* background-color: aquamarine; */
+        width: 90vw;
+        padding: 50px 0 50px 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div>
+        <h1 class="header">
+          <i>99designs</i>
+        </h1>
+        <h5 class="header2">by vista</h5>
+      </div>
+      <div class="middle">
+        <p class="t1">Categories</p>
+        <p class="t2">&nbsp;&nbsp; How it works</p>
+        <p class="t3">&nbsp&nbsp &nbsp; Find a designer</p>
+        <p class="t4">&nbsp&nbsp &nbsp; Inspiration</p>
+        <p class="t5">&nbsp&nbsp &nbsp; Studio</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-phone"></i>
+        <h4 class="contact">+234 8127409978 &nbsp; Log in</h4>
+      </div>
+    </div>
+    <div class="clicks">
+      <div class="button">
+        <a type="button">Home</a>&nbsp; /
+        <a type="button">&nbsp;Inspiration</a> &nbsp;/
+        <a type="button">&nbsp;Websites</a>&nbsp; /
+        <a type="button">&nbsp;Simple</a>
+      </div>
+      <div class="void"></div>
+      <div>
+        <input
+          class="right"
+          type="search"
+          placeholder="Search Keywords eg.retro,minimal,bear,mystery"
+        />
+      </div>
+    </div>
+    <div class="about">
+      <img src="./channel.pictures//test.png" />
+
+      <div>
+        <h1 class="topic">simple websites</h1>
+        <h3 class="line">__</h3>
+        <p class="summary">
+          Make your business shine online with a custom simple website designed
+          just for you by a professional designer. Need ideas? We’ve collected
+          some amazing examples of simple websites from our global community of
+          designers. Get inspired and start planning the perfect simple web
+          design today.
+        </p>
+      </div>
+    </div>
+    <div class="author"><i>by KR Designs</i></div>
+    <button class="button2">More simple websites</button>
+    <div>
+      <h3 class="sub-heading">
+        Simple websites not a good fit?&nbsp; Try something else:
+      </h3>
+    </div>
+    <div>
+      <input
+        class="search2"
+        type="search"
+        placeholder="Search Keywords eg.retro,minimal,bear,mystery"
+      />
+    </div>
+    <div class="click2">
+      <button class="a1">Wedding websites</button>
+      <button class="a1">Cool websites</button>
+      <button class="a1">Creative websites</button>
+
+      <button class="a1">clean websites</button>
+      <button class="a1">Aesthetic websites</button>
+      <button class="a1">Beautiful websites</button>
+
+      <button class="a1">Dark websites</button>
+      <button class="a1">Luxury websites</button>
+      <button class="a1">Development websites</button>
+
+      <button class="a1">Fun websites</button>
+      <button class="a1">Winning websites</button>
+      <button class="a1">Innovative websites</button>
+      <button class="a1">Unique websites</button>
+      <button class="a1">Game websites</button>
+      <button class="a1">Design firm websites</button>
+
+      <button class="a1">premium websites</button>
+      <button class="a1">Icon websites</button>
+      <button class="a1">ecommerce websites</button>
+
+      <button class="a1">Courses websites</button>
+      <button class="a1">Awesome websites</button>
+    </div>
+    <div>
+      <button class="button2">More web design tips</button>
+    </div>
+    <div class="hard">
+      <p class="pt1">WALL STREET JOURNAL</p>
+      <p class="pt2">TechCrunch</p>
+      <p class="pt3">Entrepreneur</p>
+    </div>
+    <div class="v-hard">
+      <p class="v1">The New York Times</p>
+      <p class="v2">Forbes</p>
+    </div>
+    <hr />
+    <div class="click3">
+      <p>Company</p>
+      <p>Design services</p>
+      <p>Get a design</p>
+      <p>Resources</p>
+
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+  </body>
+</html>
